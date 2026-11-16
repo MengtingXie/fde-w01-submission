@@ -1,0 +1,71 @@
+{
+  "product_version": "0.2.0-w1",
+  "runtime_revision": "w01-runtime-20260922",
+  "session_id": "e807afaa-29d0-4ee4-b03f-67bc2146331b",
+  "model_mode": "live",
+  "model_name": "gpt-5.4-mini",
+  "prompt_sha256": "f4f255f0bd7dd70b7f63f432387db6fe98350919beef3cf6945928cb170545e4",
+  "status": "completed",
+  "result": {
+    "status": "completed",
+    "summary": "样例会员 M001 的 recall_review 标签草案已通过确认并执行成功，当前状态为 applied。",
+    "recommendations": [],
+    "evidence_ids": [
+      "f5f4f654-a99e-43ca-9257-24984153c343"
+    ],
+    "limitations": [
+      "这是样例动作结果，后续如需撤销需走受控入口。"
+    ]
+  },
+  "observations": [
+    {
+      "name": "prepare_tag",
+      "result": {
+        "status": "awaiting_approval",
+        "draft": {
+          "id": "f5f4f654-a99e-43ca-9257-24984153c343",
+          "session": "e807afaa-29d0-4ee4-b03f-67bc2146331b",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "hash": "b68e396a1185d85788a2c2e3cc20e477e84515af3a595546e4b0be7ef3142abe",
+          "status": "draft",
+          "result": null
+        }
+      },
+      "call_id": "call_F62TzOZ6wFLdLaJC7oLk6C5e"
+    },
+    {
+      "name": "tag_execution",
+      "result": {
+        "id": "f5f4f654-a99e-43ca-9257-24984153c343",
+        "session": "e807afaa-29d0-4ee4-b03f-67bc2146331b",
+        "payload": {
+          "member_id": "M001",
+          "tag": "recall_review"
+        },
+        "hash": "b68e396a1185d85788a2c2e3cc20e477e84515af3a595546e4b0be7ef3142abe",
+        "status": "applied",
+        "result": {
+          "action_id": "f5f4f654-a99e-43ca-9257-24984153c343",
+          "status": "applied",
+          "payload": {
+            "member_id": "M001",
+            "tag": "recall_review"
+          },
+          "label_active": true,
+          "label_version": 7
+        }
+      }
+    }
+  ],
+  "steps": 2,
+  "output_repairs": 0,
+  "usage": {
+    "prompt_tokens": 3246,
+    "completion_tokens": 112,
+    "total_tokens": 3358
+  },
+  "trace_id": "47eda61bc1eeef20a7ccb3bafb1e4708"
+}

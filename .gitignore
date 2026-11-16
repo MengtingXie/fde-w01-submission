@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.env.*
+.venv/
+.runtime/
+node_modules/
+*.zip
+*.inspect.ndjson
